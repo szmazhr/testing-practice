@@ -1,18 +1,18 @@
 import capitalize from "./capitalize";
 
-test.skip("capitalize Basic Test", () => {
+test("capitalize Basic Test", () => {
   expect(capitalize("hello")).toEqual("Hello");
 });
 
-test.skip("capitalize Empty Test", () => {
+test("capitalize Empty Test", () => {
   expect(capitalize("")).toEqual("");
 });
-test.skip('capitalize long string', () => {
+test('capitalize long string', () => {
   expect(capitalize('hello-this-is-long-sentence')).toBe(
-    'Hello-This-Is-Long-Sentence'
+    'Hello-this-is-long-sentence'
   );
 });
-test.skip('capitalize all uppercase', () => {
-  expect(capitalize('HELLO WORLD!')).toBe('Hello World!');
+test('capitalize all uppercase', () => {
+  expect(capitalize('HELLO WORLD!')).toBe('Hello world!');
 });
 

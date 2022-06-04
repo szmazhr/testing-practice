@@ -1,11 +1,11 @@
 import analyzeArray from "./analyzeArray";
 
 
-test.skip("analyzeArray Object", () => {
+test("analyzeArray Object", () => {
   expect(analyzeArray([1, 2, 3, 4, 5])).toBeInstanceOf(Object);
 });
 
-test.skip('analyzeArray Basic Test', () => {
+test('analyzeArray Basic Test', () => {
   expect(analyzeArray([1, 2, 3, 4, 5])).toEqual({
     average: 3,
     min: 1,
@@ -14,7 +14,7 @@ test.skip('analyzeArray Basic Test', () => {
   });
 });
 
-test.skip('analyzeArray Empty Test', () => {
+test('analyzeArray Empty Test', () => {
   expect(analyzeArray([])).toEqual({
     average: null,
     min: null,
@@ -23,9 +23,9 @@ test.skip('analyzeArray Empty Test', () => {
   });
 });
 
-test.skip('analyzeArray Big Test', () => {
+test('analyzeArray Big Test', () => {
   expect(analyzeArray([1, 2, 15, 3, 4, 18, 5, 6, 7, 21, 8, 9, 10])).toEqual({
-    average: 8,
+    average: 8.38,
     min: 1,
     max: 21,
     length: 13,
